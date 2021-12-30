@@ -1,0 +1,4 @@
+Question 1.
+The following problem is on the backend regarding address_ship and delivery_service. 
+According to my assumption, assuming the development scheme is monolithic an error occurred in processing the query and calling the function from the query. 
+The solution is to run the transaction, then if the transaction is successful then i will look at the database, if it doesn't match i will check the log that is reversing the transaction id, then i will try to replicate it in the staging environment or production environment with the same transaction scenario whether an anomaly occurs or not.
